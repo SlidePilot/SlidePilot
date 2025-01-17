@@ -37,6 +37,15 @@ class PageController {
         selectPage(at: currentPage-1, sender: sender)
     }
     
+    /** Sends a notification, that the first page was selected. */
+    public static func firstPage(sender: Any?) {
+        selectPage(at: 0, sender: sender)
+    }
+    
+    /** Sends a notification, that the last page was selected. */
+    public static func lastPage(sender: Any?) {
+        selectPage(at: DocumentController.pageCount-1, sender: sender)
+    }
     
     /** Sends a notification, that the page was changed. With the corresponding page as user info. */
     public static func selectPage(at index: Int, sender: Any?) {

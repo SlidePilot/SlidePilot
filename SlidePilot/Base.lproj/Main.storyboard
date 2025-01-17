@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -465,6 +465,18 @@
                                                 <action selector="goBack:" target="Ady-hI-5gd" id="PYr-6q-DwM"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="First Slide" keyEquivalent="" id="Wxf-IY-pEt">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="firstSlide:" target="Ady-hI-5gd" id="DQe-46-Be8"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Last Slide" keyEquivalent="" id="uNO-Q7-Anf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="lastSlide:" target="Ady-hI-5gd" id="6z8-Fq-aYc"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="WxF-lf-SZG"/>
                                         <menuItem title="Display Black Screen" tag="201" keyEquivalent="b" identifier="DisplayBlackScreen" id="Wsl-Lh-Rzy">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -691,7 +703,7 @@
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="tLk-sB-UgV">
                                         <rect key="frame" x="0.0" y="0.0" width="700" height="153"/>
                                         <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-u6-wpl" customClass="TimingControl" customModule="SlidePilot" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-u6-wpl" customClass="TimingControl" customModule="SlidePilot" customModuleProvider="target">
                                                 <rect key="frame" x="267" y="34" width="166" height="85"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="85" id="vnc-Hp-eJ9"/>
@@ -715,7 +727,7 @@
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="IVP-vn-KwH">
                                         <rect key="frame" x="700" y="0.0" width="700" height="153"/>
                                         <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-Pb-ePI" customClass="ClockLabel" customModule="SlidePilot" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-Pb-ePI" customClass="ClockLabel" customModule="SlidePilot" customModuleProvider="target">
                                                 <rect key="frame" x="267" y="34" width="166" height="85"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="85" id="dOp-qt-xnl"/>

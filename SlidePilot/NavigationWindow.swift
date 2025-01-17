@@ -18,6 +18,10 @@ class NavigationWindow: NSWindow {
             if let appDelegate = NSApp.delegate as? AppDelegate {
                 appDelegate.startTimerIfNeeded()
             }
+        } else if event.specialKey == NSEvent.SpecialKey.home {
+            PageController.firstPage(sender: self)
+        } else if event.specialKey == NSEvent.SpecialKey.end {
+            PageController.lastPage(sender: self)
         } else {
             super.keyDown(with: event)
         }

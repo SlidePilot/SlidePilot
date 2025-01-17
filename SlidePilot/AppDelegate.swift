@@ -21,7 +21,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: - Menu Outlets
     @IBOutlet weak var previousSlideItem: NSMenuItem!
     @IBOutlet weak var nextSlideItem: NSMenuItem!
-    
+    @IBOutlet weak var firstSlideItem: NSMenuItem!
+    @IBOutlet weak var lastSlideItem: NSMenuItem!
+
     @IBOutlet weak var showNavigatorItem: NSMenuItem!
     @IBOutlet weak var showCurrentSlideItem: NSMenuItem!
     @IBOutlet weak var previewNextSlideItem: NSMenuItem!
@@ -530,7 +532,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         startTimerIfNeeded()
     }
     
-    
+    @IBAction func firstSlide(_ sender: NSMenuItem) {
+        PageController.firstPage(sender: self)
+    }
+
+    @IBAction func lastSlide(_ sender: NSMenuItem) {
+        PageController.lastPage(sender: self)
+    }
+
     @IBAction func goBack(_ sender: NSMenuItem) {
         PageController.selectPreviousPage(sender: self)
     }
